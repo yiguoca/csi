@@ -1,0 +1,2705 @@
+{
+  "virtualMachines": [
+    {
+      "self": {
+        "type": "VirtualMachine",
+        "value": "vm-3458"
+      },
+      "value": [
+        {
+          "key": 301,
+          "value": "4"
+        },
+        {
+          "key": 302,
+          "value": "15-Jun-2022"
+        }
+      ],
+      "availableField": [
+        {
+          "key": 302,
+          "name": "Date Created",
+          "type": "string",
+          "managedObjectType": "VirtualMachine"
+        },
+        {
+          "key": 301,
+          "name": "Power on Priority",
+          "type": "string",
+          "managedObjectType": "VirtualMachine"
+        },
+        {
+          "key": 201,
+          "name": "VM Creation Ticket",
+          "type": "string",
+          "managedObjectType": "VirtualMachine"
+        }
+      ],
+      "parent": {
+        "type": "Folder",
+        "value": "group-v2513"
+      },
+      "customValue": [
+        {
+          "key": 301,
+          "value": "4"
+        },
+        {
+          "key": 302,
+          "value": "15-Jun-2022"
+        }
+      ],
+      "overallStatus": "green",
+      "configStatus": "green",
+      "configIssue": null,
+      "effectiveRole": [
+        258634835
+      ],
+      "permission": [
+        {
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "principal": "AUTODATACORP\\SVC_Ops_NP_Kube_Stor",
+          "group": false,
+          "roleId": 258634835,
+          "propagate": false
+        }
+      ],
+      "name": "Prod - lops-prto-xkn03 (lx)",
+      "disabledMethod": [
+        "Destroy_Task",
+        "UnregisterVM",
+        "UnmountToolsInstaller",
+        "AnswerVM",
+        "UpgradeVM_Task",
+        "UpgradeTools_Task",
+        "UpgradeToolsFromImage_Task",
+        "ApplyEvcModeVM_Task",
+        "StartRecording_Task",
+        "StopRecording_Task",
+        "StartReplaying_Task",
+        "StopReplaying_Task",
+        "TurnOffFaultToleranceForVM_Task",
+        "MakePrimaryVM_Task",
+        "TerminateFaultTolerantVM_Task",
+        "DisableSecondaryVM_Task",
+        "EnableSecondaryVM_Task",
+        "StopRecording_Task",
+        "StopReplaying_Task",
+        "CustomizeVM_Task",
+        "MarkAsTemplate",
+        "ResetGuestInformation",
+        "ExportVm",
+        "PowerOnVM_Task",
+        "MarkAsVirtualMachine"
+      ],
+      "recentTask": null,
+      "declaredAlarmState": [
+        {
+          "key": "6.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-6"
+          },
+          "overallStatus": "green",
+          "time": "2025-04-11T19:26:25.363266Z",
+          "acknowledged": false
+        },
+        {
+          "key": "5.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-5"
+          },
+          "overallStatus": "green",
+          "time": "2025-04-11T19:26:25.36327Z",
+          "acknowledged": false
+        },
+        {
+          "key": "3507.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-3507"
+          },
+          "overallStatus": "green",
+          "time": "2024-08-13T14:56:51.753999Z",
+          "acknowledged": false,
+          "eventKey": 150724059
+        },
+        {
+          "key": "112.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-112"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "54.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-54"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "47.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-47"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "39.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-39"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "10.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-10"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "2.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-2"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "15.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-15"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "3502.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-3502"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "304.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-304"
+          },
+          "overallStatus": "green",
+          "time": "2022-11-16T19:17:07.517Z",
+          "acknowledged": false,
+          "eventKey": 1579156
+        },
+        {
+          "key": "19.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-19"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "2304.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-2304"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "81.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-81"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "52.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-52"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "12.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-12"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "128.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-128"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "301.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-301"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "40.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-40"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        },
+        {
+          "key": "38.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-38"
+          },
+          "overallStatus": "green",
+          "time": "2022-11-16T19:16:20.506Z",
+          "acknowledged": false,
+          "eventKey": 1579073
+        },
+        {
+          "key": "9.3458",
+          "entity": {
+            "type": "VirtualMachine",
+            "value": "vm-3458"
+          },
+          "alarm": {
+            "type": "Alarm",
+            "value": "alarm-9"
+          },
+          "overallStatus": "gray",
+          "time": "2025-03-05T15:14:51.168651Z",
+          "acknowledged": false
+        }
+      ],
+      "triggeredAlarmState": null,
+      "alarmActionsEnabled": true,
+      "tag": null,
+      "capability": {
+        "snapshotOperationsSupported": true,
+        "multipleSnapshotsSupported": true,
+        "snapshotConfigSupported": true,
+        "poweredOffSnapshotsSupported": true,
+        "memorySnapshotsSupported": true,
+        "revertToSnapshotSupported": true,
+        "quiescedSnapshotsSupported": true,
+        "disableSnapshotsSupported": false,
+        "lockSnapshotsSupported": true,
+        "consolePreferencesSupported": false,
+        "cpuFeatureMaskSupported": true,
+        "s1AcpiManagementSupported": true,
+        "settingScreenResolutionSupported": true,
+        "toolsAutoUpdateSupported": false,
+        "vmNpivWwnSupported": true,
+        "npivWwnOnNonRdmVmSupported": true,
+        "vmNpivWwnDisableSupported": true,
+        "vmNpivWwnUpdateSupported": true,
+        "swapPlacementSupported": true,
+        "toolsSyncTimeSupported": true,
+        "virtualMmuUsageSupported": false,
+        "diskSharesSupported": true,
+        "bootOptionsSupported": true,
+        "bootRetryOptionsSupported": true,
+        "settingVideoRamSizeSupported": true,
+        "settingDisplayTopologySupported": true,
+        "recordReplaySupported": false,
+        "changeTrackingSupported": true,
+        "multipleCoresPerSocketSupported": true,
+        "hostBasedReplicationSupported": true,
+        "guestAutoLockSupported": true,
+        "memoryReservationLockSupported": true,
+        "featureRequirementSupported": true,
+        "poweredOnMonitorTypeChangeSupported": true,
+        "seSparseDiskSupported": true,
+        "nestedHVSupported": true,
+        "vPMCSupported": true,
+        "secureBootSupported": false,
+        "perVmEvcSupported": true,
+        "virtualMmuUsageIgnored": true,
+        "virtualExecUsageIgnored": true,
+        "diskOnlySnapshotOnSuspendedVMSupported": true,
+        "suspendToMemorySupported": true,
+        "toolsSyncTimeAllowSupported": true,
+        "sevSupported": true,
+        "pmemFailoverSupported": true,
+        "requireSgxAttestationSupported": true,
+        "changeModeDisksSupported": true,
+        "vendorDeviceGroupSupported": true
+      },
+      "config": {
+        "changeVersion": "2025-04-11T19:25:11.624324Z",
+        "modified": "1970-01-01T00:00:00Z",
+        "name": "Prod - lops-prto-xkn03 (lx)",
+        "guestFullName": "Ubuntu Linux (64-bit)",
+        "version": "vmx-21",
+        "uuid": "420a591b-4b32-038b-e0a1-1d8e9a3d33a4",
+        "createDate": "2022-06-15T15:52:23.047515Z",
+        "instanceUuid": "500a89df-b134-3ddd-7f5e-9907cfe5ad14",
+        "npivTemporaryDisabled": true,
+        "locationId": "564dad5c-230d-1f6c-5141-9f52a9a2e8e8",
+        "template": false,
+        "guestId": "ubuntu64Guest",
+        "alternateGuestName": "",
+        "files": {
+          "vmPathName": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmx",
+          "snapshotDirectory": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/",
+          "suspendDirectory": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/",
+          "logDirectory": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/"
+        },
+        "tools": {
+          "toolsVersion": 11360,
+          "toolsInstallType": "guestToolsTypeOpenVMTools",
+          "afterPowerOn": true,
+          "afterResume": true,
+          "beforeGuestStandby": true,
+          "beforeGuestShutdown": true,
+          "toolsUpgradePolicy": "manual",
+          "syncTimeWithHostAllowed": true,
+          "syncTimeWithHost": false,
+          "lastInstallInfo": {
+            "counter": 2
+          }
+        },
+        "flags": {
+          "enableLogging": true,
+          "useToe": false,
+          "runWithDebugInfo": false,
+          "monitorType": "release",
+          "htSharing": "any",
+          "snapshotDisabled": false,
+          "snapshotLocked": false,
+          "diskUuidEnabled": true,
+          "snapshotPowerOffBehavior": "powerOff",
+          "recordReplayEnabled": false,
+          "faultToleranceType": "unset",
+          "cbrcCacheEnabled": false,
+          "vvtdEnabled": false,
+          "vbsEnabled": false
+        },
+        "defaultPowerOps": {
+          "powerOffType": "soft",
+          "suspendType": "hard",
+          "resetType": "soft",
+          "defaultPowerOffType": "soft",
+          "defaultSuspendType": "hard",
+          "defaultResetType": "soft",
+          "standbyAction": "checkpoint"
+        },
+        "rebootPowerOff": false,
+        "hardware": {
+          "numCPU": 4,
+          "numCoresPerSocket": 4,
+          "autoCoresPerSocket": true,
+          "memoryMB": 8192,
+          "virtualICH7MPresent": false,
+          "virtualSMCPresent": false,
+          "device": [
+            {
+              "key": 200,
+              "deviceInfo": {
+                "label": "IDE 0",
+                "summary": "IDE 0"
+              },
+              "busNumber": 0,
+              "device": [
+                3000
+              ]
+            },
+            {
+              "key": 201,
+              "deviceInfo": {
+                "label": "IDE 1",
+                "summary": "IDE 1"
+              },
+              "busNumber": 1
+            },
+            {
+              "key": 300,
+              "deviceInfo": {
+                "label": "PS2 controller 0",
+                "summary": "PS2 controller 0"
+              },
+              "busNumber": 0,
+              "device": [
+                600,
+                700
+              ]
+            },
+            {
+              "key": 100,
+              "deviceInfo": {
+                "label": "PCI controller 0",
+                "summary": "PCI controller 0"
+              },
+              "busNumber": 0,
+              "device": [
+                500,
+                12000,
+                1000,
+                4000
+              ]
+            },
+            {
+              "key": 400,
+              "deviceInfo": {
+                "label": "SIO controller 0",
+                "summary": "SIO controller 0"
+              },
+              "busNumber": 0
+            },
+            {
+              "key": 600,
+              "deviceInfo": {
+                "label": "Keyboard ",
+                "summary": "Keyboard"
+              },
+              "controllerKey": 300,
+              "unitNumber": 0
+            },
+            {
+              "key": 700,
+              "deviceInfo": {
+                "label": "Pointing device",
+                "summary": "Pointing device; Device"
+              },
+              "backing": {
+                "deviceName": "",
+                "useAutoDetect": false,
+                "hostPointingDevice": "autodetect"
+              },
+              "controllerKey": 300,
+              "unitNumber": 1
+            },
+            {
+              "key": 500,
+              "deviceInfo": {
+                "label": "Video card ",
+                "summary": "Video card"
+              },
+              "controllerKey": 100,
+              "unitNumber": 0,
+              "videoRamSizeInKB": 4096,
+              "numDisplays": 1,
+              "useAutoDetect": false,
+              "enable3DSupport": false,
+              "use3dRenderer": "automatic",
+              "graphicsMemorySizeInKB": 262144
+            },
+            {
+              "key": 12000,
+              "deviceInfo": {
+                "label": "VMCI device",
+                "summary": "Device on the virtual machine PCI bus that provides support for the virtual machine communication interface"
+              },
+              "slotInfo": {
+                "pciSlotNumber": 32
+              },
+              "controllerKey": 100,
+              "unitNumber": 17,
+              "id": -1707265116,
+              "allowUnrestrictedCommunication": false,
+              "filterEnable": true
+            },
+            {
+              "key": 1000,
+              "deviceInfo": {
+                "label": "SCSI controller 0",
+                "summary": "VMware paravirtual SCSI"
+              },
+              "slotInfo": {
+                "pciSlotNumber": 160
+              },
+              "controllerKey": 100,
+              "unitNumber": 3,
+              "busNumber": 0,
+              "device": [
+                2000,
+                2001
+              ],
+              "hotAddRemove": true,
+              "sharedBus": "noSharing",
+              "scsiCtlrUnitNumber": 7
+            },
+            {
+              "key": 3000,
+              "deviceInfo": {
+                "label": "CD/DVD drive 1",
+                "summary": "Remote ATAPI"
+              },
+              "backing": {
+                "deviceName": "",
+                "useAutoDetect": false
+              },
+              "connectable": {
+                "startConnected": false,
+                "allowGuestControl": true,
+                "connected": false,
+                "status": "ok"
+              },
+              "controllerKey": 200,
+              "unitNumber": 0
+            },
+            {
+              "key": 2000,
+              "deviceInfo": {
+                "label": "Hard disk 1",
+                "summary": "52,428,800 KB"
+              },
+              "backing": {
+                "fileName": "[L-P-VM-V.15] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-000001.vmdk",
+                "datastore": {
+                  "type": "Datastore",
+                  "value": "datastore-780098"
+                },
+                "diskMode": "persistent",
+                "split": false,
+                "writeThrough": false,
+                "thinProvisioned": false,
+                "eagerlyScrub": false,
+                "uuid": "6000C295-5795-81f4-590c-5eeb3ccf519c",
+                "contentId": "5e917bcf8e735d2a05d30acc53b9368e",
+                "parent": {
+                  "fileName": "[L-P-VM-V.15] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmdk",
+                  "datastore": {
+                    "type": "Datastore",
+                    "value": "datastore-780098"
+                  },
+                  "diskMode": "persistent",
+                  "thinProvisioned": false,
+                  "eagerlyScrub": false,
+                  "uuid": "6000C295-5795-81f4-590c-5eeb3ccf519c",
+                  "contentId": "7d0b5d244fc34d1ec106778f7aa85824",
+                  "digestEnabled": false
+                },
+                "deltaDiskFormat": "seSparseFormat",
+                "digestEnabled": false,
+                "deltaGrainSize": 4,
+                "sharing": "sharingNone"
+              },
+              "controllerKey": 1000,
+              "unitNumber": 0,
+              "capacityInKB": 52428800,
+              "capacityInBytes": 53687091200,
+              "shares": {
+                "shares": 1000,
+                "level": "normal"
+              },
+              "storageIOAllocation": {
+                "limit": -1,
+                "shares": {
+                  "shares": 1000,
+                  "level": "normal"
+                },
+                "reservation": 0
+              },
+              "diskObjectId": "544-2000",
+              "vDiskVersion": 3,
+              "nativeUnmanagedLinkedClone": false,
+              "guestReadOnly": false
+            },
+            {
+              "key": 2001,
+              "deviceInfo": {
+                "label": "Hard disk 2",
+                "summary": "3,145,728 KB"
+              },
+              "backing": {
+                "fileName": "[L-P-Ops-Kube-V.0] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-000001.vmdk",
+                "datastore": {
+                  "type": "Datastore",
+                  "value": "datastore-954878"
+                },
+                "diskMode": "persistent",
+                "split": false,
+                "writeThrough": false,
+                "thinProvisioned": false,
+                "eagerlyScrub": false,
+                "uuid": "6000C29a-9e7d-1094-3d59-0f98debc68a7",
+                "contentId": "3ad4d0702cb30d6fb88bbc53fffffffe",
+                "parent": {
+                  "fileName": "[L-P-Ops-Kube-V.0] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmdk",
+                  "datastore": {
+                    "type": "Datastore",
+                    "value": "datastore-954878"
+                  },
+                  "diskMode": "persistent",
+                  "thinProvisioned": false,
+                  "eagerlyScrub": false,
+                  "uuid": "6000C29a-9e7d-1094-3d59-0f98debc68a7",
+                  "contentId": "3ad4d0702cb30d6fb88bbc53fffffffe",
+                  "digestEnabled": false
+                },
+                "deltaDiskFormat": "seSparseFormat",
+                "digestEnabled": false,
+                "deltaGrainSize": 4,
+                "sharing": "sharingNone"
+              },
+              "controllerKey": 1000,
+              "unitNumber": 1,
+              "capacityInKB": 3145728,
+              "capacityInBytes": 3221225472,
+              "shares": {
+                "shares": 1000,
+                "level": "normal"
+              },
+              "storageIOAllocation": {
+                "limit": -1,
+                "shares": {
+                  "shares": 1000,
+                  "level": "normal"
+                },
+                "reservation": 0
+              },
+              "diskObjectId": "544-2001",
+              "vDiskVersion": 3,
+              "nativeUnmanagedLinkedClone": false,
+              "guestReadOnly": false
+            },
+            {
+              "key": 4000,
+              "deviceInfo": {
+                "label": "Network adapter 1",
+                "summary": "DVSwitch: 50 09 e7 46 84 d4 9a 26-80 14 c5 99 c6 8a 6d c4"
+              },
+              "backing": {
+                "port": {
+                  "switchUuid": "50 09 e7 46 84 d4 9a 26-80 14 c5 99 c6 8a 6d c4",
+                  "portgroupKey": "dvportgroup-1037",
+                  "portKey": "1490",
+                  "connectionCookie": 1294481571
+                }
+              },
+              "connectable": {
+                "migrateConnect": "unset",
+                "startConnected": true,
+                "allowGuestControl": false,
+                "connected": true,
+                "status": "ok"
+              },
+              "slotInfo": {
+                "pciSlotNumber": 192
+              },
+              "controllerKey": 100,
+              "unitNumber": 7,
+              "addressType": "assigned",
+              "macAddress": "00:50:56:8a:8c:f1",
+              "wakeOnLanEnabled": true,
+              "resourceAllocation": {
+                "reservation": 0,
+                "share": {
+                  "shares": 50,
+                  "level": "normal"
+                },
+                "limit": -1
+              },
+              "uptCompatibilityEnabled": true,
+              "uptv2Enabled": false
+            }
+          ],
+          "motherboardLayout": "i440bxHostBridge",
+          "simultaneousThreads": 1
+        },
+        "cpuAllocation": {
+          "reservation": 0,
+          "limit": -1,
+          "shares": {
+            "shares": 4000,
+            "level": "normal"
+          }
+        },
+        "memoryAllocation": {
+          "reservation": 0,
+          "limit": -1,
+          "shares": {
+            "shares": 81920,
+            "level": "normal"
+          },
+          "overheadLimit": 104
+        },
+        "latencySensitivity": {
+          "level": "normal"
+        },
+        "memoryHotAddEnabled": true,
+        "cpuHotAddEnabled": false,
+        "cpuHotRemoveEnabled": false,
+        "hotPlugMemoryLimit": 131072,
+        "hotPlugMemoryIncrementSize": 128,
+        "extraConfig": [
+          {
+            "key": "sched.cpu.latencySensitivity",
+            "value": "normal"
+          },
+          {
+            "key": "tools.guest.desktop.autolock",
+            "value": "TRUE"
+          },
+          {
+            "key": "nvram",
+            "value": "Prod - lops-prto-xkn03 (lx).nvram"
+          },
+          {
+            "key": "pciBridge0.present",
+            "value": "TRUE"
+          },
+          {
+            "key": "svga.present",
+            "value": "TRUE"
+          },
+          {
+            "key": "pciBridge4.present",
+            "value": "TRUE"
+          },
+          {
+            "key": "pciBridge4.virtualDev",
+            "value": "pcieRootPort"
+          },
+          {
+            "key": "pciBridge4.functions",
+            "value": "8"
+          },
+          {
+            "key": "pciBridge5.present",
+            "value": "TRUE"
+          },
+          {
+            "key": "pciBridge5.virtualDev",
+            "value": "pcieRootPort"
+          },
+          {
+            "key": "pciBridge5.functions",
+            "value": "8"
+          },
+          {
+            "key": "pciBridge6.present",
+            "value": "TRUE"
+          },
+          {
+            "key": "pciBridge6.virtualDev",
+            "value": "pcieRootPort"
+          },
+          {
+            "key": "pciBridge6.functions",
+            "value": "8"
+          },
+          {
+            "key": "pciBridge7.present",
+            "value": "TRUE"
+          },
+          {
+            "key": "pciBridge7.virtualDev",
+            "value": "pcieRootPort"
+          },
+          {
+            "key": "pciBridge7.functions",
+            "value": "8"
+          },
+          {
+            "key": "hpet0.present",
+            "value": "TRUE"
+          },
+          {
+            "key": "numa.autosize.cookie",
+            "value": "40012"
+          },
+          {
+            "key": "numa.autosize.vcpu.maxPerVirtualNode",
+            "value": "4"
+          },
+          {
+            "key": "pciBridge0.pciSlotNumber",
+            "value": "17"
+          },
+          {
+            "key": "pciBridge4.pciSlotNumber",
+            "value": "21"
+          },
+          {
+            "key": "pciBridge5.pciSlotNumber",
+            "value": "22"
+          },
+          {
+            "key": "pciBridge6.pciSlotNumber",
+            "value": "23"
+          },
+          {
+            "key": "pciBridge7.pciSlotNumber",
+            "value": "24"
+          },
+          {
+            "key": "scsi0.pciSlotNumber",
+            "value": "160"
+          },
+          {
+            "key": "ethernet0.pciSlotNumber",
+            "value": "192"
+          },
+          {
+            "key": "vmci0.pciSlotNumber",
+            "value": "32"
+          },
+          {
+            "key": "scsi0.sasWWID",
+            "value": "50 05 05 6b 4b 32 03 80"
+          },
+          {
+            "key": "monitor.phys_bits_used",
+            "value": "45"
+          },
+          {
+            "key": "vmotion.checkpointFBSize",
+            "value": "4194304"
+          },
+          {
+            "key": "vmotion.checkpointSVGAPrimarySize",
+            "value": "4194304"
+          },
+          {
+            "key": "softPowerOff",
+            "value": "FALSE"
+          },
+          {
+            "key": "svga.guestBackedPrimaryAware",
+            "value": "TRUE"
+          },
+          {
+            "key": "guestOS.detailed.data",
+            "value": "architecture='X86' bitness='64' distroName='Ubuntu' distroVersion='20.04' familyName='Linux' kernelVersion='5.4.0-42-generic' prettyName='Ubuntu 20.04.1 LTS'"
+          },
+          {
+            "key": "guestInfo.detailed.data",
+            "value": "architecture='X86' bitness='64' distroName='Ubuntu' distroVersion='20.04' familyName='Linux' kernelVersion='5.4.0-42-generic' prettyName='Ubuntu 20.04.1 LTS'"
+          },
+          {
+            "key": "toolsInstallManager.updateCounter",
+            "value": "2"
+          },
+          {
+            "key": "SCSI0:0.ctkEnabled",
+            "value": "TRUE"
+          },
+          {
+            "key": "ctkEnabled",
+            "value": "TRUE"
+          },
+          {
+            "key": "vmxstats.filename",
+            "value": "Prod - lops-prto-xkn03 (lx).scoreboard"
+          },
+          {
+            "key": "viv.moid",
+            "value": "197979ca-71aa-4f0d-b722-42f60eccea03:vm-3458:Dgk/0rCsRifQEgSy3DcFgKOmHDCP8+255y4QnHJxQWA="
+          },
+          {
+            "key": "guestinfo.vmtools.description",
+            "value": "open-vm-tools 11.3.0 build 18090558"
+          },
+          {
+            "key": "guestinfo.vmtools.versionString",
+            "value": "11.3.0"
+          },
+          {
+            "key": "guestinfo.vmtools.versionNumber",
+            "value": "11360"
+          },
+          {
+            "key": "guestinfo.vmtools.buildNumber",
+            "value": "18090558"
+          },
+          {
+            "key": "guestinfo.Cb.RegId",
+            "value": "6514-147089602"
+          },
+          {
+            "key": "guestinfo.Cb.DeviceId",
+            "value": "0efd7eb915eb1240a3b7ce59ee544e018b734cbe4e7b83957ad6607c53035908"
+          },
+          {
+            "key": "guestinfo.Cb.SensorVersion",
+            "value": "2.13.3.1121464"
+          },
+          {
+            "key": "sched.swap.derivedName",
+            "value": "/vmfs/volumes/671fc698-cc085676-40e1-b2820b2007c3/Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-fb135fb4.vswp"
+          },
+          {
+            "key": "scsi0:0.redo",
+            "value": ""
+          },
+          {
+            "key": "scsi0:1.ctkEnabled",
+            "value": "TRUE"
+          },
+          {
+            "key": "scsi0:1.redo",
+            "value": ""
+          },
+          {
+            "key": "guestinfo.appInfo",
+            "value": "{\n\"version\":\"1\", \n\"updateCounter\":\"19\", \n\"publishTime\":\"2025-04-16T11:08:52.284Z\", \n\"applications\":[\n{\"a\":\"kworker/2:0-events\",\"v\":\"\"},\n{\"a\":\"kworker/0:0-events\",\"v\":\"\"},\n{\"a\":\"kworker/u8:1-events_power_efficient\",\"v\":\"\"},\n{\"a\":\"kworker/0:2-xfs-sync/dm-0\",\"v\":\"\"},\n{\"a\":\"kworker/2:2-events\",\"v\":\"\"},\n{\"a\":\"kworker/u8:2-events_power_efficient\",\"v\":\"\"},\n{\"a\":\"kworker/u8:0-events_power_efficient\",\"v\":\"\"},\n{\"a\":\"kworker/2:1-events\",\"v\":\"\"},\n{\"a\":\"kworker/0:1-xfs-sync/dm-0\",\"v\":\"\"},\n{\"a\":\"kworker/1:0-events\",\"v\":\"\"},\n{\"a\":\"kworker/3:0\",\"v\":\"\"},\n{\"a\":\"kworker/1:1-events\",\"v\":\"\"},\n{\"a\":\"kworker/3:1-events\",\"v\":\"\"},\n{\"a\":\"nginx: cache manager process\",\"v\":\"\"},\n{\"a\":\"nginx: worker process\",\"v\":\"\"},\n{\"a\":\"nginx: worker process\",\"v\":\"\"},\n{\"a\":\"nginx: worker process\",\"v\":\"\"},\n{\"a\":\"nginx: worker process\",\"v\":\"\"},\n{\"a\":\"nginx: master process /usr/bin/nginx -c /etc/nginx/nginx.conf\",\"v\":\"\"},\n{\"a\":\"nginx-ingress-controller\",\"v\":\"\"},\n{\"a\":\"catatonit\",\"v\":\"\"},\n{\"a\":\"pause\",\"v\":\"\"},\n{\"a\":\"containerd-shim-runc-v2\",\"v\":\"\"},\n{\"a\":\"calico-node\",\"v\":\"\"},\n{\"a\":\"calico-node\",\"v\":\"\"},\n{\"a\":\"calico-node\",\"v\":\"\"},\n{\"a\":\"calico-node\",\"v\":\"\"},\n{\"a\":\"runsv\",\"v\":\"\"},\n{\"a\":\"runsv\",\"v\":\"\"},\n{\"a\":\"runsv\",\"v\":\"\"},\n{\"a\":\"runsv\",\"v\":\"\"},\n{\"a\":\"flanneld\",\"v\":\"\"},\n{\"a\":\"runsvdir\",\"v\":\"\"},\n{\"a\":\"vsphere-cloud-controller-manager\",\"v\":\"\"},\n{\"a\":\"kube-controller-manager\",\"v\":\"\"},\n{\"a\":\"pause\",\"v\":\"\"},\n{\"a\":\"pause\",\"v\":\"\"},\n{\"a\":\"containerd-shim-runc-v2\",\"v\":\"\"},\n{\"a\":\"containerd-shim-runc-v2\",\"v\":\"\"},\n{\"a\":\"kube-apiserver\",\"v\":\"\"},\n{\"a\":\"pause\",\"v\":\"\"},\n{\"a\":\"containerd-shim-runc-v2\",\"v\":\"\"},\n{\"a\":\"uuidd\",\"v\":\"\"},\n{\"a\":\"kube-scheduler\",\"v\":\"\"},\n{\"a\":\"etcd\",\"v\":\"\"},\n{\"a\":\"kube-proxy\",\"v\":\"\"},\n{\"a\":\"pause\",\"v\":\"\"},\n{\"a\":\"pause\",\"v\":\"\"},\n{\"a\":\"pause\",\"v\":\"\"},\n{\"a\":\"pause\",\"v\":\"\"},\n{\"a\":\"containerd-shim-runc-v2\",\"v\":\"\"},\n{\"a\":\"containerd-shim-runc-v2\",\"v\":\"\"},\n{\"a\":\"containerd-shim-runc-v2\",\"v\":\"\"},\n{\"a\":\"containerd-shim-runc-v2\",\"v\":\"\"},\n{\"a\":\"kubelet\",\"v\":\"\"},\n{\"a\":\"containerd\",\"v\":\"\"},\n{\"a\":\"event_collector\",\"v\":\"\"},\n{\"a\":\"cbagentd\",\"v\":\"\"},\n{\"a\":\"python3\",\"v\":\"\"},\n{\"a\":\"python3\",\"v\":\"\"},\n{\"a\":\"python3\",\"v\":\"\"},\n{\"a\":\"python3\",\"v\":\"\"},\n{\"a\":\"bpfilter_umh\",\"v\":\"\"},\n{\"a\":\"polkitd\",\"v\":\"\"},\n{\"a\":\"agetty\",\"v\":\"\"},\n{\"a\":\"systemd-logind\",\"v\":\"\"},\n{\"a\":\"cron\",\"v\":\"\"},\n{\"a\":\"accounts-daemon\",\"v\":\"\"},\n{\"a\":\"sssd_sudo\",\"v\":\"\"},\n{\"a\":\"sssd_pam\",\"v\":\"\"},\n{\"a\":\"sssd_nss\",\"v\":\"\"},\n{\"a\":\"sssd_be\",\"v\":\"\"},\n{\"a\":\"rke2 server\",\"v\":\"\"},\n{\"a\":\"sssd\",\"v\":\"\"},\n{\"a\":\"node_exporter\",\"v\":\"\"},\n{\"a\":\"dockerd\",\"v\":\"\"},\n{\"a\":\"sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups\",\"v\":\"\"},\n{\"a\":\"chronyd\",\"v\":\"\"},\n{\"a\":\"snmpd\",\"v\":\"\"},\n{\"a\":\"chronyd\",\"v\":\"\"},\n{\"a\":\"containerd\",\"v\":\"\"},\n{\"a\":\"rsyslogd\",\"v\":\"\"},\n{\"a\":\"oddjobd\",\"v\":\"\"},\n{\"a\":\"python3\",\"v\":\"\"},\n{\"a\":\"irqbalance\",\"v\":\"\"},\n{\"a\":\"dbus-daemon\",\"v\":\"\"},\n{\"a\":\"cbagentd\",\"v\":\"\"},\n{\"a\":\"vmtoolsd\",\"v\":\"\"},\n{\"a\":\"VGAuthService\",\"v\":\"\"},\n{\"a\":\"systemd-resolved\",\"v\":\"\"},\n{\"a\":\"rpcbind\",\"v\":\"\"},\n{\"a\":\"nfit\",\"v\":\"\"},\n{\"a\":\"kworker/0:1H-kblockd\",\"v\":\"\"},\n{\"a\":\"xfsaild/dm-2\",\"v\":\"\"},\n{\"a\":\"xfs-log/dm-2\",\"v\":\"\"},\n{\"a\":\"xfs-eofblocks/d\",\"v\":\"\"},\n{\"a\":\"xfs-reclaim/dm-\",\"v\":\"\"},\n{\"a\":\"xfs-cil/dm-2\",\"v\":\"\"},\n{\"a\":\"xfs-conv/dm-2\",\"v\":\"\"},\n{\"a\":\"xfsaild/dm-0\",\"v\":\"\"},\n{\"a\":\"xfs-log/dm-0\",\"v\":\"\"},\n{\"a\":\"xfs-eofblocks/d\",\"v\":\"\"},\n{\"a\":\"xfs-reclaim/dm-\",\"v\":\"\"},\n{\"a\":\"xfs-buf/dm-2\",\"v\":\"\"},\n{\"a\":\"xfs-cil/dm-0\",\"v\":\"\"},\n{\"a\":\"xfs-conv/dm-0\",\"v\":\"\"},\n{\"a\":\"xfs-buf/dm-0\",\"v\":\"\"},\n{\"a\":\"ttm_swap\",\"v\":\"\"},\n{\"a\":\"cryptd\",\"v\":\"\"},\n{\"a\":\"irq/16-vmwgfx\",\"v\":\"\"},\n{\"a\":\"systemd-networkd\",\"v\":\"\"},\n{\"a\":\"systemd-udevd\",\"v\":\"\"},\n{\"a\":\"xprtiod\",\"v\":\"\"},\n{\"a\":\"rpciod\",\"v\":\"\"},\n{\"a\":\"systemd-journald\",\"v\":\"\"},\n{\"a\":\"xfsaild/dm-1\",\"v\":\"\"},\n{\"a\":\"xfs-log/dm-1\",\"v\":\"\"},\n{\"a\":\"xfs-eofblocks/d\",\"v\":\"\"},\n{\"a\":\"xfs-reclaim/dm-\",\"v\":\"\"},\n{\"a\":\"xfs-cil/dm-1\",\"v\":\"\"},\n{\"a\":\"xfs-conv/dm-1\",\"v\":\"\"},\n{\"a\":\"xfs-buf/dm-1\",\"v\":\"\"},\n{\"a\":\"xfs_mru_cache\",\"v\":\"\"},\n{\"a\":\"xfsalloc\",\"v\":\"\"},\n{\"a\":\"kworker/1:1H-kblockd\",\"v\":\"\"},\n{\"a\":\"kdmflush\",\"v\":\"\"},\n{\"a\":\"kdmflush\",\"v\":\"\"},\n{\"a\":\"kdmflush\",\"v\":\"\"},\n{\"a\":\"kworker/3:1H-kblockd\",\"v\":\"\"},\n{\"a\":\"vmw_pvscsi_wq_2\",\"v\":\"\"},\n{\"a\":\"scsi_tmf_2\",\"v\":\"\"},\n{\"a\":\"scsi_eh_2\",\"v\":\"\"},\n{\"a\":\"kworker/2:1H-kblockd\",\"v\":\"\"},\n{\"a\":\"charger_manager\",\"v\":\"\"},\n{\"a\":\"kworker/u9:0\",\"v\":\"\"},\n{\"a\":\"kstrp\",\"v\":\"\"},\n{\"a\":\"ipv6_addrconf\",\"v\":\"\"},\n{\"a\":\"vfio-irqfd-clea\",\"v\":\"\"},\n{\"a\":\"scsi_tmf_1\",\"v\":\"\"},\n{\"a\":\"scsi_eh_1\",\"v\":\"\"},\n{\"a\":\"scsi_tmf_0\",\"v\":\"\"},\n{\"a\":\"scsi_eh_0\",\"v\":\"\"},\n{\"a\":\"acpi_thermal_pm\",\"v\":\"\"},\n{\"a\":\"irq/55-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/54-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/53-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/52-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/51-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/50-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/49-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/48-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/47-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/46-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/45-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/44-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/43-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/42-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/41-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/40-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/39-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/38-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/37-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/36-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/35-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/34-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/33-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/32-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/31-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/30-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/29-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/28-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/27-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/26-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/25-pciehp\",\"v\":\"\"},\n{\"a\":\"irq/24-pciehp\",\"v\":\"\"},\n{\"a\":\"kthrotld\",\"v\":\"\"},\n{\"a\":\"ecryptfs-kthrea\",\"v\":\"\"},\n{\"a\":\"kswapd0\",\"v\":\"\"},\n{\"a\":\"watchdogd\",\"v\":\"\"},\n{\"a\":\"devfreq_wq\",\"v\":\"\"},\n{\"a\":\"edac-poller\",\"v\":\"\"},\n{\"a\":\"md\",\"v\":\"\"},\n{\"a\":\"ata_sff\",\"v\":\"\"},\n{\"a\":\"tpm_dev_wq\",\"v\":\"\"},\n{\"a\":\"blkcg_punt_bio\",\"v\":\"\"},\n{\"a\":\"kblockd\",\"v\":\"\"},\n{\"a\":\"kintegrityd\",\"v\":\"\"},\n{\"a\":\"khugepaged\",\"v\":\"\"},\n{\"a\":\"ksmd\",\"v\":\"\"},\n{\"a\":\"kcompactd0\",\"v\":\"\"},\n{\"a\":\"writeback\",\"v\":\"\"},\n{\"a\":\"oom_reaper\",\"v\":\"\"},\n{\"a\":\"khungtaskd\",\"v\":\"\"},\n{\"a\":\"kauditd\",\"v\":\"\"},\n{\"a\":\"rcu_tasks_kthre\",\"v\":\"\"},\n{\"a\":\"netns\",\"v\":\"\"},\n{\"a\":\"kdevtmpfs\",\"v\":\"\"},\n{\"a\":\"kworker/3:0H-kblockd\",\"v\":\"\"},\n{\"a\":\"ksoftirqd/3\",\"v\":\"\"},\n{\"a\":\"migration/3\",\"v\":\"\"},\n{\"a\":\"idle_inject/3\",\"v\":\"\"},\n{\"a\":\"cpuhp/3\",\"v\":\"\"},\n{\"a\":\"kworker/2:0H-kblockd\",\"v\":\"\"},\n{\"a\":\"ksoftirqd/2\",\"v\":\"\"},\n{\"a\":\"migration/2\",\"v\":\"\"},\n{\"a\":\"idle_inject/2\",\"v\":\"\"},\n{\"a\":\"cpuhp/2\",\"v\":\"\"},\n{\"a\":\"kworker/1:0H\",\"v\":\"\"},\n{\"a\":\"ksoftirqd/1\",\"v\":\"\"},\n{\"a\":\"migration/1\",\"v\":\"\"},\n{\"a\":\"idle_inject/1\",\"v\":\"\"},\n{\"a\":\"cpuhp/1\",\"v\":\"\"},\n{\"a\":\"cpuhp/0\",\"v\":\"\"},\n{\"a\":\"idle_inject/0\",\"v\":\"\"},\n{\"a\":\"migration/0\",\"v\":\"\"},\n{\"a\":\"rcu_sched\",\"v\":\"\"},\n{\"a\":\"ksoftirqd/0\",\"v\":\"\"},\n{\"a\":\"mm_percpu_wq\",\"v\":\"\"},\n{\"a\":\"kworker/0:0H\",\"v\":\"\"},\n{\"a\":\"rcu_par_gp\",\"v\":\"\"},\n{\"a\":\"rcu_gp\",\"v\":\"\"},\n{\"a\":\"kthreadd\",\"v\":\"\"},\n{\"a\":\"init\",\"v\":\"\"}]}"
+          },
+          {
+            "key": "cpuid.coresPerSocket.cookie",
+            "value": "4"
+          },
+          {
+            "key": "vmotion.svga.mobMaxSize",
+            "value": "4194304"
+          },
+          {
+            "key": "vmotion.svga.graphicsMemoryKB",
+            "value": "4096"
+          },
+          {
+            "key": "vmware.tools.internalversion",
+            "value": "11360"
+          },
+          {
+            "key": "vmware.tools.requiredversion",
+            "value": "12448"
+          },
+          {
+            "key": "migrate.hostLogState",
+            "value": "none"
+          },
+          {
+            "key": "migrate.migrationId",
+            "value": "8607345257976475455"
+          },
+          {
+            "key": "migrate.hostLog",
+            "value": "Prod - lops-prto-xkn03 (lx)-2dbc394e.hlog"
+          },
+          {
+            "key": "disk.enableUUID",
+            "value": "TRUE"
+          }
+        ],
+        "datastoreUrl": [
+          {
+            "name": "L-P-VM-V.12",
+            "url": "/vmfs/volumes/671fc698-cc085676-40e1-b2820b2007c3"
+          },
+          {
+            "name": "L-P-VM-V.15",
+            "url": "/vmfs/volumes/671fc6fc-1ee89baa-10b6-b2820b200843"
+          },
+          {
+            "name": "L-P-Ops-Kube-V.0",
+            "url": "/vmfs/volumes/67cb2c65-69c3632a-fcd5-b2820b20082b"
+          }
+        ],
+        "swapPlacement": "inherit",
+        "bootOptions": {
+          "enterBIOSSetup": false,
+          "efiSecureBootEnabled": false,
+          "bootRetryEnabled": false,
+          "bootRetryDelay": 10000,
+          "networkBootProtocol": "ipv4"
+        },
+        "vAssertsEnabled": false,
+        "changeTrackingEnabled": true,
+        "firmware": "bios",
+        "maxMksConnections": 40,
+        "guestAutoLockEnabled": true,
+        "memoryReservationLockedToMax": false,
+        "initialOverhead": {
+          "initialMemoryReservation": 106012672,
+          "initialSwapReservation": 252674048
+        },
+        "nestedHVEnabled": false,
+        "vPMCEnabled": false,
+        "scheduledHardwareUpgradeInfo": {
+          "upgradePolicy": "never",
+          "scheduledHardwareUpgradeStatus": "none"
+        },
+        "vmxConfigChecksum": "OG5XKzNXNUdZV3ljYlZkcTM5SFlCWE54TCtZSmJvZ3RCQjF5VTBPYXNycz0=",
+        "messageBusTunnelEnabled": false,
+        "guestIntegrityInfo": {
+          "enabled": false
+        },
+        "migrateEncryption": "opportunistic",
+        "sgxInfo": {
+          "epcSize": 0,
+          "flcMode": "unlocked",
+          "requireAttestation": false
+        },
+        "ftEncryptionMode": "ftEncryptionOpportunistic",
+        "guestMonitoringModeInfo": {},
+        "sevEnabled": false,
+        "numaInfo": {
+          "coresPerNumaNode": 4,
+          "autoCoresPerNumaNode": true,
+          "vnumaOnCpuHotaddExposed": false
+        },
+        "pmemFailoverEnabled": false,
+        "vmxStatsCollectionEnabled": true,
+        "vmOpNotificationToAppEnabled": false,
+        "vmOpNotificationTimeout": -1,
+        "deviceSwap": {
+          "lsiToPvscsi": {
+            "enabled": true,
+            "applicable": false,
+            "status": "none"
+          }
+        },
+        "deviceGroups": {},
+        "fixedPassthruHotPlugEnabled": false,
+        "metroFtEnabled": false
+      },
+      "layout": {
+        "configFile": [
+          "Prod - lops-prto-xkn03 (lx).vmxf",
+          "Prod - lops-prto-xkn03 (lx).nvram",
+          "Prod - lops-prto-xkn03 (lx).vmsd"
+        ],
+        "logFile": [
+          "vmware-0.log",
+          "vmware-162.log",
+          "vmware-163.log",
+          "vmware-160.log",
+          "vmware-161.log",
+          "vmware-166.log",
+          "vmware-164.log",
+          "vmware-165.log",
+          "vmware-158.log",
+          "vmware-159.log",
+          "vmware-157.log",
+          "vmware.log"
+        ],
+        "disk": [
+          {
+            "key": 2000,
+            "diskFile": [
+              "[L-P-VM-V.15] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmdk",
+              "[L-P-VM-V.15] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-000001.vmdk"
+            ]
+          },
+          {
+            "key": 2001,
+            "diskFile": [
+              "[L-P-Ops-Kube-V.0] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmdk",
+              "[L-P-Ops-Kube-V.0] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-000001.vmdk"
+            ]
+          }
+        ],
+        "snapshot": [
+          {
+            "key": {
+              "type": "VirtualMachineSnapshot",
+              "value": "snapshot-1002172"
+            },
+            "snapshotFile": [
+              "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-Snapshot39.vmsn",
+              "[L-P-VM-V.15] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmdk",
+              "[L-P-Ops-Kube-V.0] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmdk"
+            ]
+          }
+        ],
+        "swapFile": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-fb135fb4.vswp"
+      },
+      "layoutEx": {
+        "file": [
+          {
+            "key": 0,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmx",
+            "type": "config",
+            "size": 15463,
+            "uniqueSize": 15463,
+            "accessible": true
+          },
+          {
+            "key": 1,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmxf",
+            "type": "extendedConfig",
+            "size": 150,
+            "uniqueSize": 150,
+            "accessible": true
+          },
+          {
+            "key": 2,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).nvram",
+            "type": "nvram",
+            "size": 8684,
+            "uniqueSize": 8684,
+            "accessible": true
+          },
+          {
+            "key": 3,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmsd",
+            "type": "snapshotList",
+            "size": 758,
+            "uniqueSize": 758,
+            "accessible": true
+          },
+          {
+            "key": 4,
+            "name": "[L-P-VM-V.15] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmdk",
+            "type": "diskDescriptor",
+            "size": 624,
+            "uniqueSize": 624,
+            "accessible": true
+          },
+          {
+            "key": 5,
+            "name": "[L-P-VM-V.15] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-flat.vmdk",
+            "type": "diskExtent",
+            "size": 53687091200,
+            "uniqueSize": 53687091200,
+            "accessible": true
+          },
+          {
+            "key": 6,
+            "name": "[L-P-VM-V.15] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-000001.vmdk",
+            "type": "diskDescriptor",
+            "size": 460,
+            "uniqueSize": 460,
+            "accessible": true
+          },
+          {
+            "key": 7,
+            "name": "[L-P-VM-V.15] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-000001-sesparse.vmdk",
+            "type": "diskExtent",
+            "size": 1389363200,
+            "uniqueSize": 1389363200,
+            "accessible": true
+          },
+          {
+            "key": 8,
+            "name": "[L-P-Ops-Kube-V.0] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmdk",
+            "type": "diskDescriptor",
+            "size": 621,
+            "uniqueSize": 621,
+            "accessible": true
+          },
+          {
+            "key": 9,
+            "name": "[L-P-Ops-Kube-V.0] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-flat.vmdk",
+            "type": "diskExtent",
+            "size": 3221225472,
+            "uniqueSize": 3221225472,
+            "accessible": true
+          },
+          {
+            "key": 10,
+            "name": "[L-P-Ops-Kube-V.0] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-000001.vmdk",
+            "type": "diskDescriptor",
+            "size": 458,
+            "uniqueSize": 458,
+            "accessible": true
+          },
+          {
+            "key": 11,
+            "name": "[L-P-Ops-Kube-V.0] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-000001-sesparse.vmdk",
+            "type": "diskExtent",
+            "size": 1048576,
+            "uniqueSize": 1048576,
+            "accessible": true
+          },
+          {
+            "key": 12,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-Snapshot39.vmem",
+            "type": "snapshotMemory",
+            "size": 8589934592,
+            "uniqueSize": 8589934592,
+            "accessible": true
+          },
+          {
+            "key": 13,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-Snapshot39.vmsn",
+            "type": "snapshotData",
+            "size": 5509229,
+            "uniqueSize": 5509229,
+            "accessible": true
+          },
+          {
+            "key": 23,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-fb135fb4.vswp",
+            "type": "swap",
+            "size": 8589934592,
+            "uniqueSize": 8589934592,
+            "accessible": true
+          },
+          {
+            "key": 27,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmx-Prod - lops-prto-xkn-41abe5173d6ae7e6ad192d9e776456cd1f1781056aaebe5e7afe15b81c23ee26-1.vswp",
+            "type": "uwswap",
+            "size": 90177536,
+            "uniqueSize": 90177536,
+            "accessible": true
+          },
+          {
+            "key": 14,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-0.log",
+            "type": "log",
+            "size": 238233,
+            "uniqueSize": 238233,
+            "accessible": true
+          },
+          {
+            "key": 15,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-162.log",
+            "type": "log",
+            "size": 666045,
+            "uniqueSize": 666045,
+            "accessible": true
+          },
+          {
+            "key": 16,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-163.log",
+            "type": "log",
+            "size": 188002,
+            "uniqueSize": 188002,
+            "accessible": true
+          },
+          {
+            "key": 17,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-160.log",
+            "type": "log",
+            "size": 218101,
+            "uniqueSize": 218101,
+            "accessible": true
+          },
+          {
+            "key": 18,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-161.log",
+            "type": "log",
+            "size": 197621,
+            "uniqueSize": 197621,
+            "accessible": true
+          },
+          {
+            "key": 21,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-166.log",
+            "type": "log",
+            "size": 397760,
+            "uniqueSize": 397760,
+            "accessible": true
+          },
+          {
+            "key": 33,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-164.log",
+            "type": "log",
+            "size": 1064659,
+            "uniqueSize": 1064659,
+            "accessible": true
+          },
+          {
+            "key": 24,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-165.log",
+            "type": "log",
+            "size": 186825,
+            "uniqueSize": 186825,
+            "accessible": true
+          },
+          {
+            "key": 19,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-158.log",
+            "type": "log",
+            "size": 2048074,
+            "uniqueSize": 2048074,
+            "accessible": true
+          },
+          {
+            "key": 20,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-159.log",
+            "type": "log",
+            "size": 1806476,
+            "uniqueSize": 1806476,
+            "accessible": true
+          },
+          {
+            "key": 22,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware-157.log",
+            "type": "log",
+            "size": 384818,
+            "uniqueSize": 384818,
+            "accessible": true
+          },
+          {
+            "key": 25,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/vmware.log",
+            "type": "log",
+            "size": 474102,
+            "uniqueSize": 474102,
+            "accessible": true
+          },
+          {
+            "key": 26,
+            "name": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx)-aux.xml",
+            "type": "snapshotManifestList",
+            "size": 14,
+            "uniqueSize": 14,
+            "accessible": true
+          }
+        ],
+        "disk": [
+          {
+            "key": 2000,
+            "chain": [
+              {
+                "fileKey": [
+                  4,
+                  5
+                ]
+              },
+              {
+                "fileKey": [
+                  6,
+                  7
+                ]
+              }
+            ]
+          },
+          {
+            "key": 2001,
+            "chain": [
+              {
+                "fileKey": [
+                  8,
+                  9
+                ]
+              },
+              {
+                "fileKey": [
+                  10,
+                  11
+                ]
+              }
+            ]
+          }
+        ],
+        "snapshot": [
+          {
+            "key": {
+              "type": "VirtualMachineSnapshot",
+              "value": "snapshot-1002172"
+            },
+            "dataKey": 13,
+            "memoryKey": 12,
+            "disk": [
+              {
+                "key": 2000,
+                "chain": [
+                  {
+                    "fileKey": [
+                      4,
+                      5
+                    ]
+                  }
+                ]
+              },
+              {
+                "key": 2001,
+                "chain": [
+                  {
+                    "fileKey": [
+                      8,
+                      9
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "timestamp": "2025-04-16T14:53:57.376536Z"
+      },
+      "storage": {
+        "perDatastoreUsage": [
+          {
+            "datastore": {
+              "type": "Datastore",
+              "value": "datastore-780095"
+            },
+            "committed": 17283451734,
+            "uncommitted": 0,
+            "unshared": 0
+          },
+          {
+            "datastore": {
+              "type": "Datastore",
+              "value": "datastore-780098"
+            },
+            "committed": 55076455484,
+            "uncommitted": 52297728000,
+            "unshared": 55076455484
+          },
+          {
+            "datastore": {
+              "type": "Datastore",
+              "value": "datastore-954878"
+            },
+            "committed": 3222275127,
+            "uncommitted": 3220176896,
+            "unshared": 3222275127
+          }
+        ],
+        "timestamp": "2025-04-16T14:53:57.377Z"
+      },
+      "environmentBrowser": {
+        "type": "EnvironmentBrowser",
+        "value": "envbrowser-3458"
+      },
+      "resourcePool": {
+        "type": "ResourcePool",
+        "value": "resgroup-1007"
+      },
+      "parentVApp": null,
+      "resourceConfig": {
+        "entity": {
+          "type": "VirtualMachine",
+          "value": "vm-3458"
+        },
+        "cpuAllocation": {
+          "reservation": 0,
+          "limit": -1,
+          "shares": {
+            "shares": 4000,
+            "level": "normal"
+          }
+        },
+        "memoryAllocation": {
+          "reservation": 0,
+          "limit": -1,
+          "shares": {
+            "shares": 81920,
+            "level": "normal"
+          },
+          "overheadLimit": 104
+        }
+      },
+      "runtime": {
+        "device": [
+          {
+            "runtimeState": {
+              "vmDirectPathGen2Active": false,
+              "vmDirectPathGen2InactiveReasonOther": [
+                "vmNptIncompatibleNetwork"
+              ],
+              "attachmentStatus": "green"
+            },
+            "key": 4000
+          }
+        ],
+        "host": {
+          "type": "HostSystem",
+          "value": "host-554320"
+        },
+        "connectionState": "connected",
+        "powerState": "poweredOn",
+        "faultToleranceState": "notConfigured",
+        "dasVmProtection": {
+          "dasProtected": true
+        },
+        "toolsInstallerMounted": false,
+        "bootTime": "2025-04-11T19:25:24.586626Z",
+        "maxCpuUsage": 11572,
+        "maxMemoryUsage": 8192,
+        "numMksConnections": 0,
+        "recordReplayState": "inactive",
+        "onlineStandby": false,
+        "minRequiredEVCModeKey": "intel-skylake",
+        "consolidationNeeded": false,
+        "offlineFeatureRequirement": [
+          {
+            "key": "cpuid.lm",
+            "featureName": "cpuid.lm",
+            "value": "Num:Min:1"
+          }
+        ],
+        "featureRequirement": [
+          {
+            "key": "cpuid.3dnprefetch",
+            "featureName": "cpuid.3dnprefetch",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.abm",
+            "featureName": "cpuid.abm",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.adx",
+            "featureName": "cpuid.adx",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.aes",
+            "featureName": "cpuid.aes",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.avx",
+            "featureName": "cpuid.avx",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.avx2",
+            "featureName": "cpuid.avx2",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.avx512bw",
+            "featureName": "cpuid.avx512bw",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.avx512cd",
+            "featureName": "cpuid.avx512cd",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.avx512dq",
+            "featureName": "cpuid.avx512dq",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.avx512f",
+            "featureName": "cpuid.avx512f",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.avx512vl",
+            "featureName": "cpuid.avx512vl",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.bmi1",
+            "featureName": "cpuid.bmi1",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.bmi2",
+            "featureName": "cpuid.bmi2",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.clflushopt",
+            "featureName": "cpuid.clflushopt",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.clwb",
+            "featureName": "cpuid.clwb",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.cmpxchg16b",
+            "featureName": "cpuid.cmpxchg16b",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.enfstrg",
+            "featureName": "cpuid.enfstrg",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.f16c",
+            "featureName": "cpuid.f16c",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.fcmd",
+            "featureName": "cpuid.fcmd",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.fma",
+            "featureName": "cpuid.fma",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.fsgsbase",
+            "featureName": "cpuid.fsgsbase",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.ibpb",
+            "featureName": "cpuid.ibpb",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.ibrs",
+            "featureName": "cpuid.ibrs",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.intel",
+            "featureName": "cpuid.intel",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.invpcid",
+            "featureName": "cpuid.invpcid",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.lahf64",
+            "featureName": "cpuid.lahf64",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.lm",
+            "featureName": "cpuid.lm",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.mdclear",
+            "featureName": "cpuid.mdclear",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.movbe",
+            "featureName": "cpuid.movbe",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.nx",
+            "featureName": "cpuid.nx",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.pcid",
+            "featureName": "cpuid.pcid",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.pclmulqdq",
+            "featureName": "cpuid.pclmulqdq",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.pdpe1gb",
+            "featureName": "cpuid.pdpe1gb",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.pku",
+            "featureName": "cpuid.pku",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.popcnt",
+            "featureName": "cpuid.popcnt",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.rdrand",
+            "featureName": "cpuid.rdrand",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.rdseed",
+            "featureName": "cpuid.rdseed",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.rdtscp",
+            "featureName": "cpuid.rdtscp",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.smap",
+            "featureName": "cpuid.smap",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.smep",
+            "featureName": "cpuid.smep",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.ss",
+            "featureName": "cpuid.ss",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.ssbd",
+            "featureName": "cpuid.ssbd",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.sse3",
+            "featureName": "cpuid.sse3",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.sse41",
+            "featureName": "cpuid.sse41",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.sse42",
+            "featureName": "cpuid.sse42",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.ssse3",
+            "featureName": "cpuid.ssse3",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.stibp",
+            "featureName": "cpuid.stibp",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.xcr0_master_hi16_zmm",
+            "featureName": "cpuid.xcr0_master_hi16_zmm",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.xcr0_master_opmask",
+            "featureName": "cpuid.xcr0_master_opmask",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.xcr0_master_pkru",
+            "featureName": "cpuid.xcr0_master_pkru",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.xcr0_master_sse",
+            "featureName": "cpuid.xcr0_master_sse",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.xcr0_master_ymm_h",
+            "featureName": "cpuid.xcr0_master_ymm_h",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.xcr0_master_zmm_h",
+            "featureName": "cpuid.xcr0_master_zmm_h",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.xsave",
+            "featureName": "cpuid.xsave",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.xsavec",
+            "featureName": "cpuid.xsavec",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.xsaveopt",
+            "featureName": "cpuid.xsaveopt",
+            "value": "Bool:Min:1"
+          },
+          {
+            "key": "cpuid.xsaves",
+            "featureName": "cpuid.xsaves",
+            "value": "Bool:Min:1"
+          }
+        ],
+        "paused": false,
+        "snapshotInBackground": false,
+        "instantCloneFrozen": false
+      },
+      "guest": {
+        "toolsStatus": "toolsOk",
+        "toolsVersionStatus": "guestToolsUnmanaged",
+        "toolsVersionStatus2": "guestToolsUnmanaged",
+        "toolsRunningStatus": "guestToolsRunning",
+        "toolsVersion": "11360",
+        "toolsInstallType": "guestToolsTypeOpenVMTools",
+        "guestId": "ubuntu64Guest",
+        "guestFamily": "linuxGuest",
+        "guestFullName": "Ubuntu Linux (64-bit)",
+        "guestDetailedData": "architecture='X86' bitness='64' distroName='Ubuntu' distroVersion='20.04' familyName='Linux' kernelVersion='5.4.0-42-generic' prettyName='Ubuntu 20.04.1 LTS'",
+        "hostName": "lops-prto-xkn03",
+        "ipAddress": "172.16.138.233",
+        "net": [
+          {
+            "network": "vLAN 138",
+            "ipAddress": [
+              "172.16.138.233",
+              "fe80::250:56ff:fe8a:8cf1"
+            ],
+            "macAddress": "00:50:56:8a:8c:f1",
+            "connected": true,
+            "deviceConfigId": 4000,
+            "ipConfig": {
+              "ipAddress": [
+                {
+                  "ipAddress": "172.16.138.233",
+                  "prefixLength": 24,
+                  "state": "preferred"
+                },
+                {
+                  "ipAddress": "fe80::250:56ff:fe8a:8cf1",
+                  "prefixLength": 64,
+                  "state": "unknown"
+                }
+              ]
+            }
+          },
+          {
+            "ipAddress": [
+              "10.42.2.0",
+              "fe80::8c31:ecff:fe43:22ae"
+            ],
+            "macAddress": "8e:31:ec:43:22:ae",
+            "connected": true,
+            "deviceConfigId": -1,
+            "ipConfig": {
+              "ipAddress": [
+                {
+                  "ipAddress": "10.42.2.0",
+                  "prefixLength": 32,
+                  "state": "preferred"
+                },
+                {
+                  "ipAddress": "fe80::8c31:ecff:fe43:22ae",
+                  "prefixLength": 64,
+                  "state": "unknown"
+                }
+              ]
+            }
+          },
+          {
+            "ipAddress": [
+              "fe80::ecee:eeff:feee:eeee"
+            ],
+            "macAddress": "ee:ee:ee:ee:ee:ee",
+            "connected": true,
+            "deviceConfigId": -1,
+            "ipConfig": {
+              "ipAddress": [
+                {
+                  "ipAddress": "fe80::ecee:eeff:feee:eeee",
+                  "prefixLength": 64,
+                  "state": "unknown"
+                }
+              ]
+            }
+          },
+          {
+            "ipAddress": [
+              "fe80::ecee:eeff:feee:eeee"
+            ],
+            "macAddress": "ee:ee:ee:ee:ee:ee",
+            "connected": true,
+            "deviceConfigId": -1,
+            "ipConfig": {
+              "ipAddress": [
+                {
+                  "ipAddress": "fe80::ecee:eeff:feee:eeee",
+                  "prefixLength": 64,
+                  "state": "unknown"
+                }
+              ]
+            }
+          }
+        ],
+        "ipStack": [
+          {
+            "dnsConfig": {
+              "dhcp": false,
+              "hostName": "lops-prto-xkn03",
+              "domainName": "autodatacorp.org",
+              "ipAddress": [
+                "172.16.130.110",
+                "172.16.130.109"
+              ],
+              "searchDomain": [
+                "autodatacorp.org",
+                "autodata.org",
+                "autodata.net"
+              ]
+            },
+            "ipRouteConfig": {
+              "ipRoute": [
+                {
+                  "network": "0.0.0.0",
+                  "prefixLength": 0,
+                  "gateway": {
+                    "ipAddress": "172.16.138.1",
+                    "device": "0"
+                  }
+                },
+                {
+                  "network": "10.42.0.0",
+                  "prefixLength": 24,
+                  "gateway": {
+                    "ipAddress": "10.42.0.0",
+                    "device": "1"
+                  }
+                },
+                {
+                  "network": "10.42.1.0",
+                  "prefixLength": 24,
+                  "gateway": {
+                    "ipAddress": "10.42.1.0",
+                    "device": "1"
+                  }
+                },
+                {
+                  "network": "10.42.2.9",
+                  "prefixLength": 32,
+                  "gateway": {
+                    "device": "2"
+                  }
+                },
+                {
+                  "network": "10.42.2.10",
+                  "prefixLength": 32,
+                  "gateway": {
+                    "device": "2"
+                  }
+                },
+                {
+                  "network": "10.42.3.0",
+                  "prefixLength": 24,
+                  "gateway": {
+                    "ipAddress": "10.42.3.0",
+                    "device": "1"
+                  }
+                },
+                {
+                  "network": "10.42.4.0",
+                  "prefixLength": 24,
+                  "gateway": {
+                    "ipAddress": "10.42.4.0",
+                    "device": "1"
+                  }
+                },
+                {
+                  "network": "172.16.138.0",
+                  "prefixLength": 24,
+                  "gateway": {
+                    "device": "0"
+                  }
+                },
+                {
+                  "network": "fe80::",
+                  "prefixLength": 64,
+                  "gateway": {
+                    "device": "0"
+                  }
+                },
+                {
+                  "network": "fe80::",
+                  "prefixLength": 64,
+                  "gateway": {
+                    "device": "1"
+                  }
+                },
+                {
+                  "network": "fe80::",
+                  "prefixLength": 64,
+                  "gateway": {
+                    "device": "2"
+                  }
+                },
+                {
+                  "network": "fe80::",
+                  "prefixLength": 64,
+                  "gateway": {
+                    "device": "2"
+                  }
+                },
+                {
+                  "network": "fe80::250:56ff:fe8a:8cf1",
+                  "prefixLength": 128,
+                  "gateway": {
+                    "device": "0"
+                  }
+                },
+                {
+                  "network": "fe80::8c31:ecff:fe43:22ae",
+                  "prefixLength": 128,
+                  "gateway": {
+                    "device": "1"
+                  }
+                },
+                {
+                  "network": "fe80::ecee:eeff:feee:eeee",
+                  "prefixLength": 128,
+                  "gateway": {
+                    "device": "2"
+                  }
+                },
+                {
+                  "network": "fe80::ecee:eeff:feee:eeee",
+                  "prefixLength": 128,
+                  "gateway": {
+                    "device": "2"
+                  }
+                },
+                {
+                  "network": "ff00::",
+                  "prefixLength": 8,
+                  "gateway": {
+                    "device": "0"
+                  }
+                },
+                {
+                  "network": "ff00::",
+                  "prefixLength": 8,
+                  "gateway": {
+                    "device": "1"
+                  }
+                },
+                {
+                  "network": "ff00::",
+                  "prefixLength": 8,
+                  "gateway": {
+                    "device": "2"
+                  }
+                },
+                {
+                  "network": "ff00::",
+                  "prefixLength": 8,
+                  "gateway": {
+                    "device": "2"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "disk": [
+          {
+            "diskPath": "/",
+            "capacity": 20466106368,
+            "freeSpace": 14406434816,
+            "filesystemType": "xfs",
+            "mappings": [
+              {
+                "key": 2000
+              }
+            ]
+          },
+          {
+            "diskPath": "/var/lib",
+            "capacity": 32657674240,
+            "freeSpace": 22670974976,
+            "filesystemType": "xfs",
+            "mappings": [
+              {
+                "key": 2000
+              }
+            ]
+          },
+          {
+            "diskPath": "/boot",
+            "capacity": 527073280,
+            "freeSpace": 419512320,
+            "filesystemType": "xfs",
+            "mappings": [
+              {
+                "key": 2000
+              }
+            ]
+          }
+        ],
+        "screen": {
+          "width": 800,
+          "height": 600
+        },
+        "guestState": "running",
+        "appHeartbeatStatus": "appStatusGray",
+        "guestKernelCrashed": false,
+        "appState": "none",
+        "guestOperationsReady": true,
+        "interactiveGuestOperationsReady": false,
+        "guestStateChangeSupported": true,
+        "hwVersion": "vmx-21",
+        "customizationInfo": {
+          "customizationStatus": "TOOLSDEPLOYPKG_IDLE"
+        }
+      },
+      "summary": {
+        "vm": {
+          "type": "VirtualMachine",
+          "value": "vm-3458"
+        },
+        "runtime": {
+          "device": [
+            {
+              "runtimeState": {
+                "vmDirectPathGen2Active": false,
+                "vmDirectPathGen2InactiveReasonOther": [
+                  "vmNptIncompatibleNetwork"
+                ],
+                "attachmentStatus": "green"
+              },
+              "key": 4000
+            }
+          ],
+          "host": {
+            "type": "HostSystem",
+            "value": "host-554320"
+          },
+          "connectionState": "connected",
+          "powerState": "poweredOn",
+          "faultToleranceState": "notConfigured",
+          "dasVmProtection": {
+            "dasProtected": true
+          },
+          "toolsInstallerMounted": false,
+          "bootTime": "2025-04-11T19:25:24.586626Z",
+          "maxCpuUsage": 11572,
+          "maxMemoryUsage": 8192,
+          "numMksConnections": 0,
+          "recordReplayState": "inactive",
+          "onlineStandby": false,
+          "minRequiredEVCModeKey": "intel-skylake",
+          "consolidationNeeded": false,
+          "offlineFeatureRequirement": [
+            {
+              "key": "cpuid.lm",
+              "featureName": "cpuid.lm",
+              "value": "Num:Min:1"
+            }
+          ],
+          "featureRequirement": [
+            {
+              "key": "cpuid.3dnprefetch",
+              "featureName": "cpuid.3dnprefetch",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.abm",
+              "featureName": "cpuid.abm",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.adx",
+              "featureName": "cpuid.adx",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.aes",
+              "featureName": "cpuid.aes",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.avx",
+              "featureName": "cpuid.avx",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.avx2",
+              "featureName": "cpuid.avx2",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.avx512bw",
+              "featureName": "cpuid.avx512bw",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.avx512cd",
+              "featureName": "cpuid.avx512cd",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.avx512dq",
+              "featureName": "cpuid.avx512dq",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.avx512f",
+              "featureName": "cpuid.avx512f",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.avx512vl",
+              "featureName": "cpuid.avx512vl",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.bmi1",
+              "featureName": "cpuid.bmi1",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.bmi2",
+              "featureName": "cpuid.bmi2",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.clflushopt",
+              "featureName": "cpuid.clflushopt",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.clwb",
+              "featureName": "cpuid.clwb",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.cmpxchg16b",
+              "featureName": "cpuid.cmpxchg16b",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.enfstrg",
+              "featureName": "cpuid.enfstrg",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.f16c",
+              "featureName": "cpuid.f16c",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.fcmd",
+              "featureName": "cpuid.fcmd",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.fma",
+              "featureName": "cpuid.fma",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.fsgsbase",
+              "featureName": "cpuid.fsgsbase",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.ibpb",
+              "featureName": "cpuid.ibpb",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.ibrs",
+              "featureName": "cpuid.ibrs",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.intel",
+              "featureName": "cpuid.intel",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.invpcid",
+              "featureName": "cpuid.invpcid",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.lahf64",
+              "featureName": "cpuid.lahf64",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.lm",
+              "featureName": "cpuid.lm",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.mdclear",
+              "featureName": "cpuid.mdclear",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.movbe",
+              "featureName": "cpuid.movbe",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.nx",
+              "featureName": "cpuid.nx",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.pcid",
+              "featureName": "cpuid.pcid",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.pclmulqdq",
+              "featureName": "cpuid.pclmulqdq",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.pdpe1gb",
+              "featureName": "cpuid.pdpe1gb",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.pku",
+              "featureName": "cpuid.pku",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.popcnt",
+              "featureName": "cpuid.popcnt",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.rdrand",
+              "featureName": "cpuid.rdrand",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.rdseed",
+              "featureName": "cpuid.rdseed",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.rdtscp",
+              "featureName": "cpuid.rdtscp",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.smap",
+              "featureName": "cpuid.smap",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.smep",
+              "featureName": "cpuid.smep",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.ss",
+              "featureName": "cpuid.ss",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.ssbd",
+              "featureName": "cpuid.ssbd",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.sse3",
+              "featureName": "cpuid.sse3",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.sse41",
+              "featureName": "cpuid.sse41",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.sse42",
+              "featureName": "cpuid.sse42",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.ssse3",
+              "featureName": "cpuid.ssse3",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.stibp",
+              "featureName": "cpuid.stibp",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.xcr0_master_hi16_zmm",
+              "featureName": "cpuid.xcr0_master_hi16_zmm",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.xcr0_master_opmask",
+              "featureName": "cpuid.xcr0_master_opmask",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.xcr0_master_pkru",
+              "featureName": "cpuid.xcr0_master_pkru",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.xcr0_master_sse",
+              "featureName": "cpuid.xcr0_master_sse",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.xcr0_master_ymm_h",
+              "featureName": "cpuid.xcr0_master_ymm_h",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.xcr0_master_zmm_h",
+              "featureName": "cpuid.xcr0_master_zmm_h",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.xsave",
+              "featureName": "cpuid.xsave",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.xsavec",
+              "featureName": "cpuid.xsavec",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.xsaveopt",
+              "featureName": "cpuid.xsaveopt",
+              "value": "Bool:Min:1"
+            },
+            {
+              "key": "cpuid.xsaves",
+              "featureName": "cpuid.xsaves",
+              "value": "Bool:Min:1"
+            }
+          ],
+          "paused": false,
+          "snapshotInBackground": false,
+          "instantCloneFrozen": false
+        },
+        "guest": {
+          "guestId": "ubuntu64Guest",
+          "guestFullName": "Ubuntu Linux (64-bit)",
+          "toolsStatus": "toolsOk",
+          "toolsVersionStatus": "guestToolsUnmanaged",
+          "toolsVersionStatus2": "guestToolsUnmanaged",
+          "toolsRunningStatus": "guestToolsRunning",
+          "hostName": "lops-prto-xkn03",
+          "ipAddress": "172.16.138.233",
+          "hwVersion": "vmx-21"
+        },
+        "config": {
+          "name": "Prod - lops-prto-xkn03 (lx)",
+          "template": false,
+          "vmPathName": "[L-P-VM-V.12] Prod - lops-prto-xkn03 (lx)/Prod - lops-prto-xkn03 (lx).vmx",
+          "memorySizeMB": 8192,
+          "numCpu": 4,
+          "numEthernetCards": 1,
+          "numVirtualDisks": 2,
+          "uuid": "420a591b-4b32-038b-e0a1-1d8e9a3d33a4",
+          "instanceUuid": "500a89df-b134-3ddd-7f5e-9907cfe5ad14",
+          "guestId": "ubuntu64Guest",
+          "guestFullName": "Ubuntu Linux (64-bit)",
+          "installBootRequired": false,
+          "tpmPresent": false,
+          "hwVersion": "vmx-21"
+        },
+        "storage": {
+          "committed": 75582182345,
+          "uncommitted": 55517904896,
+          "unshared": 58298730611,
+          "timestamp": "2025-04-16T14:53:57.377046Z"
+        },
+        "quickStats": {
+          "overallCpuUsage": 636,
+          "overallCpuDemand": 665,
+          "guestMemoryUsage": 1638,
+          "hostMemoryUsage": 8252,
+          "guestHeartbeatStatus": "green",
+          "distributedCpuEntitlement": 665,
+          "distributedMemoryEntitlement": 3768,
+          "staticCpuEntitlement": 3678,
+          "staticMemoryEntitlement": 8537,
+          "grantedMemory": 8190,
+          "privateMemory": 8190,
+          "consumedOverheadMemory": 62,
+          "ftLogBandwidth": -1,
+          "ftSecondaryLatency": -1,
+          "ftLatencyStatus": "gray",
+          "uptimeSeconds": 416352,
+          "activeMemory": 1638
+        },
+        "overallStatus": "green",
+        "customValue": [
+          {
+            "key": 301,
+            "value": "4"
+          },
+          {
+            "key": 302,
+            "value": "15-Jun-2022"
+          }
+        ]
+      },
+      "datastore": [
+        {
+          "type": "Datastore",
+          "value": "datastore-780095"
+        },
+        {
+          "type": "Datastore",
+          "value": "datastore-780098"
+        },
+        {
+          "type": "Datastore",
+          "value": "datastore-954878"
+        }
+      ],
+      "network": [
+        {
+          "type": "DistributedVirtualPortgroup",
+          "value": "dvportgroup-1037"
+        }
+      ],
+      "snapshot": {
+        "currentSnapshot": {
+          "type": "VirtualMachineSnapshot",
+          "value": "snapshot-1002172"
+        },
+        "rootSnapshotList": [
+          {
+            "snapshot": {
+              "type": "VirtualMachineSnapshot",
+              "value": "snapshot-1002172"
+            },
+            "vm": {
+              "type": "VirtualMachine",
+              "value": "vm-3458"
+            },
+            "name": "VM Snapshot 4/11/2025, 1:59:53 PM",
+            "description": "Pre-Cluster Reconfig",
+            "id": 39,
+            "createTime": "2025-04-11T17:59:55.158597Z",
+            "state": "poweredOn",
+            "quiesced": false,
+            "replaySupported": false
+          }
+        ]
+      },
+      "rootSnapshot": [
+        {
+          "type": "VirtualMachineSnapshot",
+          "value": "snapshot-1002172"
+        }
+      ],
+      "guestHeartbeatStatus": "green"
+    }
+  ]
+}
