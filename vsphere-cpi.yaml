@@ -1,0 +1,174 @@
+apiVersion: catalog.cattle.io/v1
+kind: App
+metadata:
+  annotations:
+    objectset.rio.cattle.io/applied: >-
+      H4sIAAAAAAAA/8RW227jNhD9FWH60qISLcmOvRGwQLsJUKQXNNgs+tBNHsbUyOaaIlmScuoG/veC9B1RskkXi77F4nAu55w5zAO05LFGj1A9ACqlPXqhlQs/9fQTce/IMys04+i9JCb0QNRQwZxkm6ExkD4Zp+8V2Wy2XEAFg2WRJr8IVb+9IW7Jf/aawpagAjdnoRKzJAkdsWXBls7MyVLGjWDL4kWJnEEesi26KWVu5Ty1sE6BW4rTfhAtOY+tgUp1UqYgcUoyYsDRo9Szo6xcds6TzSwZvevSouJzshmfo/XumZbm6OZQwbhsJuUUx3kzLstiNBlPyuGIpmV+xkf0pphOcDxqyjGGJrcljqaGzce+oVKIQ7+nhiwpTg6qjw+ARvxB1gmtQqIA2VRqvvg9hF6SJB9PGpSOUuBaeaulJAuVtx2lsBAqML4n7hXUdFErfFhMOD/nWZ03PBtRPcmmdVFko8kkPzvnk3NszmB9t07BGeIR9gBk+OMZefZQQ9aLRlB9oATSnrhaOCNxtWNveRO7Ti6ur3rDI8DLPYC3XZ4P6W1SsHLC8ixP4geeFGw4DL97czxN2ONY7aACKVT3d++xIdsK77JDWHovVK3vXW/4TpuPByhZUTzZ8JbVrFd+j8M7kTndWU5xL/pW4nN3Mr8yodJ2v4L0H+sWjTl8KdiwZCWkUJPjVhi/DdzRKXVXJ9dWL0VNNrlSnmyDnJJvL66vvoMUBI/xc++NqwaDTads23hoEJ0j7wZSz7QbHGvbLWeQwoJW99rWYcdAqMai87bjvrMEdym0KJRHochulpBaFBIq+CTwL8Fkp39wnSPGdXtYqZ/DWfJrp2GdHm5MLdasxqWonVY9t95ZrJPL7Tms7/YHe+pPyNtgHrvejT4Tft5NQ9YodqvIkxvwAGBmtgDusoTZDloq8jHLWf59ZwpW5KyA9TqNb8OepmEawNFhY095ulLOo5QJ162R5AlSaIR1/pKM1Ku4xGVenmX5KCuKD8WbqphUo7M/IdjzS6IsYR1h+CZ5mSRu1a362BsaUPPou7Bx9a7w673Z0gH7PlfeG61dCk4/cq47dWS4PXRmG44Onp21qHAWfe/ph+/Z2qcmf1LLUu3+a+ILrRox+w1NT+7dDI2YvSa9nSJn2Pm5tuKf+C6wxRsXFvek8MZP3mtJR29XTFm9CtEvr/9OqFqo2f/SRn/9jdJ21ry5VqER4YBsFrKS8oLHtFnYqC+RViz29fWMxriT2S+RWq1u6Cvs0rEZFuuDTYT/niOI9U+kyOLG8/IUXNe2aFdQPazX638DAAD//4hicc9/CwAA
+    objectset.rio.cattle.io/id: helm-app
+    objectset.rio.cattle.io/owner-gvk: /v1, Kind=Secret
+    objectset.rio.cattle.io/owner-name: sh.helm.release.v1.vsphere-cpi.v1
+    objectset.rio.cattle.io/owner-namespace: kube-system
+  creationTimestamp: '2025-04-11T18:17:45Z'
+  generation: 2
+  labels:
+    catalog.cattle.io/cluster-repo-name: rancher-charts
+    objectset.rio.cattle.io/hash: 62f72ba60f62214767234eb205c4e81b7a64f26a
+  managedFields:
+    - apiVersion: catalog.cattle.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:objectset.rio.cattle.io/applied: {}
+            f:objectset.rio.cattle.io/id: {}
+            f:objectset.rio.cattle.io/owner-gvk: {}
+            f:objectset.rio.cattle.io/owner-name: {}
+            f:objectset.rio.cattle.io/owner-namespace: {}
+          f:labels:
+            .: {}
+            f:catalog.cattle.io/cluster-repo-name: {}
+            f:objectset.rio.cattle.io/hash: {}
+          f:ownerReferences:
+            .: {}
+            k:{"uid":"c317cc9c-d0fc-4ed7-bd11-477059c79af5"}: {}
+        f:spec:
+          .: {}
+          f:chart:
+            .: {}
+            f:metadata:
+              .: {}
+              f:annotations:
+                .: {}
+                f:catalog.cattle.io/certified: {}
+                f:catalog.cattle.io/display-name: {}
+                f:catalog.cattle.io/kube-version: {}
+                f:catalog.cattle.io/namespace: {}
+                f:catalog.cattle.io/os: {}
+                f:catalog.cattle.io/permits-os: {}
+                f:catalog.cattle.io/rancher-version: {}
+                f:catalog.cattle.io/release-name: {}
+                f:catalog.cattle.io/ui-source-repo: {}
+                f:catalog.cattle.io/ui-source-repo-type: {}
+              f:apiVersion: {}
+              f:appVersion: {}
+              f:description: {}
+              f:icon: {}
+              f:keywords: {}
+              f:maintainers: {}
+              f:name: {}
+              f:sources: {}
+              f:version: {}
+          f:helmVersion: {}
+          f:info:
+            .: {}
+            f:description: {}
+            f:firstDeployed: {}
+            f:lastDeployed: {}
+            f:readme: {}
+            f:status: {}
+          f:name: {}
+          f:namespace: {}
+          f:resources: {}
+          f:version: {}
+      manager: rancher
+      operation: Update
+      time: '2025-04-11T18:17:47Z'
+    - apiVersion: catalog.cattle.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          .: {}
+          f:observedGeneration: {}
+          f:summary:
+            .: {}
+            f:state: {}
+      manager: rancher
+      operation: Update
+      subresource: status
+      time: '2025-04-11T18:17:47Z'
+  name: vsphere-cpi
+  namespace: kube-system
+  ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: false
+      controller: true
+      kind: Secret
+      name: sh.helm.release.v1.vsphere-cpi.v1
+      uid: c317cc9c-d0fc-4ed7-bd11-477059c79af5
+  resourceVersion: '1057701'
+  uid: dc106dc2-4be1-4fe5-849a-34402066f909
+spec:
+  chart:
+    metadata:
+      annotations:
+        catalog.cattle.io/certified: rancher
+        catalog.cattle.io/display-name: vSphere CPI
+        catalog.cattle.io/kube-version: '>= 1.27.0-0 < 1.33.0-0'
+        catalog.cattle.io/namespace: kube-system
+        catalog.cattle.io/os: linux
+        catalog.cattle.io/permits-os: linux,windows
+        catalog.cattle.io/rancher-version: '>= 2.11.0-0'
+        catalog.cattle.io/release-name: vsphere-cpi
+        catalog.cattle.io/ui-source-repo: rancher-charts
+        catalog.cattle.io/ui-source-repo-type: cluster
+      apiVersion: v1
+      appVersion: 1.32.2
+      description: vSphere Cloud Provider Interface (CPI)
+      icon: https://charts.rancher.io/assets/logos/vsphere-cpi.svg
+      keywords:
+        - infrastructure
+      maintainers:
+        - email: jiaqi.luo@suse.com
+          name: Jiaqi Luo
+        - email: brad.davidson@suse.com
+          name: Brad Davidson
+      name: rancher-vsphere-cpi
+      sources:
+        - https://github.com/kubernetes/cloud-provider-vsphere
+      version: 106.0.0+up1.10.1
+  helmVersion: 3
+  info:
+    description: Install complete
+    firstDeployed: '2025-04-11T18:17:45Z'
+    lastDeployed: '2025-04-11T18:17:45Z'
+    readme: "# vSphere Cloud Provider Interface (CPI)\n\n[vSphere Cloud Provider Interface (CPI)](https://github.com/kubernetes/cloud-provider-vsphere) is responsible for running all the platform specific control loops that were previously run in core Kubernetes components like the KCM and the kubelet, but have been moved out-of-tree to allow cloud and infrastructure providers to implement integrations that can be developed, built and released independent of Kubernetes core. The official documentation and tutorials can be found [here](https://vsphere-csi-driver.sigs.k8s.io/driver-deployment/prerequisites.html).\n\n**This chart requires being deployed into the `kube-system` namespace.**\n\n## Prerequisites\n\n- vSphere 6.7 U3+\n- Kubernetes v1.14+\n- A Secret on your Kubernetes cluster that contains vSphere credentials (Refer to `README` or `Detailed Descriptions`)\n\n## Installation\n\nThis chart requires a Secret in your Kubernetes cluster that contains the server URL and credentials to connect to the vCenter. You can have the chart generate it for you, or create it yourself and provide the name of the Secret during installation. \n\n<span style=\"color:orange\">Warning</span>: When the option to generate the Secret is enabled, the credentials are visible in the API to authorized users. If you create the Secret yourself they will not be visible.\n\nYou can create a Secret in one of the following ways:\n### <B>Option 1</b>: Create a Secret using the Rancher UI\nGo to your cluster's project (Same project you will be installing the chart) > Resources > Secrets > Add Secret.\n```yaml\n# Example of data required in the Secret\n<host-1>.username: <username>\n<host-1>.password: <password>\n```\n\n### <B>Option 2</b>: Create a Secret using kubectl\nReplace placeholders with actual values, and execute the following:\n```bash\ncat <<EOF | kubectl apply -f -\napiVersion: v1\nkind: Secret\ntype: Opaque\nmetadata:\n    name: <secret-name>\n    namespace: <charts-namespace>\ndata:\n    <host-1>.username: <base64encoded-username>\n    <host-1>.password: <base64encoded-password>\nEOF\n```\n\nMore information on managing Secrets using kubectl [here](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/).\n\n## Migration\n\nIf using this chart to migrate volumes provisioned by the in-tree provider to the out-of-tree CPI + CSI, you need to taint all nodes with the following:\n```\nnode.cloudprovider.kubernetes.io/uninitialized=true:NoSchedule\n```\n\nTo perform this operation on all nodes in your cluster, the following script has been provided for your convenience:\n```bash\n# Note: Since this script uses kubectl, ensure that you run `export KUBECONFIG=<path-to-kubeconfig-for-cluster>` before running this script\nfor node in $(kubectl get nodes | awk '{print $1}' | tail -n +2); do\n\tkubectl taint node $node node.cloudprovider.kubernetes.io/uninitialized=true:NoSchedule\ndone\n```"
+    status: deployed
+  name: vsphere-cpi
+  namespace: kube-system
+  resources:
+    - apiVersion: v1
+      kind: ServiceAccount
+      name: rancher-vsphere-cpi-cloud-controller-manager
+      namespace: kube-system
+    - apiVersion: v1
+      kind: Secret
+      name: vsphere-cpi-creds
+      namespace: kube-system
+    - apiVersion: v1
+      kind: ConfigMap
+      name: vsphere-cloud-config
+      namespace: kube-system
+    - apiVersion: rbac.authorization.k8s.io/v1
+      kind: ClusterRole
+      name: system:rancher-vsphere-cpi-cloud-controller-manager
+    - apiVersion: rbac.authorization.k8s.io/v1
+      kind: ClusterRoleBinding
+      name: system:rancher-vsphere-cpi-cloud-controller-manager
+    - apiVersion: rbac.authorization.k8s.io/v1
+      kind: RoleBinding
+      name: servicecatalog.k8s.io:apiserver-authentication-reader
+      namespace: kube-system
+    - apiVersion: v1
+      kind: Service
+      name: rancher-vsphere-cpi-cloud-controller-manager
+      namespace: kube-system
+    - apiVersion: apps/v1
+      kind: DaemonSet
+      name: rancher-vsphere-cpi-cloud-controller-manager
+      namespace: kube-system
+  version: 1
+status:
+  observedGeneration: 2
+  summary:
+    state: deployed
