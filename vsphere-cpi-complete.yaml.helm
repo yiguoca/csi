@@ -1,0 +1,317 @@
+---
+# Source: rancher-vsphere-cpi/templates/service-account.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: rancher-vsphere-cpi-cloud-controller-manager
+  labels:
+    vsphere-cpi-infra: service-account
+    component: rancher-vsphere-cpi-cloud-controller-manager
+    app.kubernetes.io/version: "1.32.2"
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: rancher-vsphere-cpi-106.0.0_up1.10.1
+  namespace: kube-system
+---
+# Source: rancher-vsphere-cpi/templates/secret.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: vsphere-cpi-creds
+  labels:
+    vsphere-cpi-infra: secret
+    component: rancher-vsphere-cpi-cloud-controller-manager
+    app.kubernetes.io/version: "1.32.2"
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: rancher-vsphere-cpi-106.0.0_up1.10.1
+  namespace: kube-system
+data:
+  lops-prif-vcsa1.autodatacorp.org.username: "U1ZDX09wc19OUF9LdWJlX1N0b3JhZ2VfQWRtaW5AYXV0b2RhdGFjb3JwLm9yZw=="
+  lops-prif-vcsa1.autodatacorp.org.password: "ekRTc1AheVV5Xmcz"
+---
+# Source: rancher-vsphere-cpi/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vsphere-cloud-config
+  labels:
+    vsphere-cpi-infra: config
+    component: rancher-vsphere-cpi-cloud-controller-manager
+    app.kubernetes.io/version: "1.32.2"
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: rancher-vsphere-cpi-106.0.0_up1.10.1
+  namespace: kube-system
+data:
+  vsphere.yaml: |
+    # Global properties in this section will be used for all specified vCenters unless overriden in VirtualCenter section.
+    global:
+      secretName: "vsphere-cpi-creds"
+      secretNamespace: "kube-system"
+      port: 443
+      insecureFlag: true
+    
+    # vcenter section
+    vcenter:
+      "lops-prif-vcsa1.autodatacorp.org":
+        server: "lops-prif-vcsa1.autodatacorp.org"
+        datacenters:
+          - "London"
+---
+# Source: rancher-vsphere-cpi/templates/role.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: system:rancher-vsphere-cpi-cloud-controller-manager
+  labels:
+    vsphere-cpi-infra: role
+    component: rancher-vsphere-cpi-cloud-controller-manager
+    app.kubernetes.io/version: "1.32.2"
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: rancher-vsphere-cpi-106.0.0_up1.10.1
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - events
+  verbs:
+  - create
+  - patch
+  - update
+- apiGroups:
+  - ""
+  resources:
+  - nodes
+  verbs:
+  - "*"
+- apiGroups:
+  - ""
+  resources:
+  - nodes/status
+  verbs:
+  - patch
+- apiGroups:
+  - ""
+  resources:
+  - services
+  verbs:
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - services/status
+  verbs:
+  - patch
+- apiGroups:
+  - ""
+  resources:
+  - serviceaccounts
+  verbs:
+  - create
+  - get
+  - list
+  - watch
+  - update
+- apiGroups:
+  - ""
+  resources:
+  - persistentvolumes
+  verbs:
+  - get
+  - list
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - endpoints
+  verbs:
+  - create
+  - get
+  - list
+  - watch
+  - update
+- apiGroups:
+  - ""
+  resources:
+  - secrets
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - "coordination.k8s.io"
+  resources:
+  - leases
+  verbs:
+  - create
+  - get
+  - list
+  - watch
+  - update
+---
+# Source: rancher-vsphere-cpi/templates/role-binding.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: system:rancher-vsphere-cpi-cloud-controller-manager
+  labels:
+    vsphere-cpi-infra: cluster-role-binding
+    component: rancher-vsphere-cpi-cloud-controller-manager
+    app.kubernetes.io/version: "1.32.2"
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: rancher-vsphere-cpi-106.0.0_up1.10.1
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: system:rancher-vsphere-cpi-cloud-controller-manager
+subjects:
+- kind: ServiceAccount
+  name: rancher-vsphere-cpi-cloud-controller-manager
+  namespace: kube-system
+- kind: User
+  name: rancher-vsphere-cpi-cloud-controller-manager
+---
+# Source: rancher-vsphere-cpi/templates/role-binding.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: servicecatalog.k8s.io:apiserver-authentication-reader
+  labels:
+    vsphere-cpi-infra: role-binding
+    component: rancher-vsphere-cpi-cloud-controller-manager
+    app.kubernetes.io/version: "1.32.2"
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: rancher-vsphere-cpi-106.0.0_up1.10.1
+  namespace: kube-system
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: extension-apiserver-authentication-reader
+subjects:
+- apiGroup: ""
+  kind: ServiceAccount
+  name: rancher-vsphere-cpi-cloud-controller-manager
+  namespace: kube-system
+- apiGroup: ""
+  kind: User
+  name: rancher-vsphere-cpi-cloud-controller-manager
+---
+# Source: rancher-vsphere-cpi/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    component: rancher-vsphere-cpi-cloud-controller-manager
+    app.kubernetes.io/version: "1.32.2"
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: rancher-vsphere-cpi-106.0.0_up1.10.1
+  name: rancher-vsphere-cpi-cloud-controller-manager
+  namespace: kube-system
+spec:
+  type: NodePort
+  ports:
+    - port: 43001
+      protocol: TCP
+      targetPort: 43001
+  selector:
+    component: rancher-vsphere-cpi-cloud-controller-manager
+---
+# Source: rancher-vsphere-cpi/templates/daemonset.yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: rancher-vsphere-cpi-cloud-controller-manager
+  labels:
+    component: rancher-vsphere-cpi-cloud-controller-manager
+    tier: control-plane
+    app.kubernetes.io/version: "1.32.2"
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: rancher-vsphere-cpi-106.0.0_up1.10.1
+  namespace: kube-system
+  annotations:
+    scheduler.alpha.kubernetes.io/critical-pod: ""
+spec:
+  selector:
+    matchLabels:
+      name: rancher-vsphere-cpi-cloud-controller-manager
+  updateStrategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        name: rancher-vsphere-cpi-cloud-controller-manager
+        component: rancher-vsphere-cpi-cloud-controller-manager
+        tier: control-plane
+        app.kubernetes.io/version: "1.32.2"
+        app.kubernetes.io/managed-by: Helm
+        helm.sh/chart: rancher-vsphere-cpi-106.0.0_up1.10.1
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              # RKE node selector label
+              - key: node-role.kubernetes.io/controlplane
+                operator: In
+                values:
+                - "true"
+              - key: kubernetes.io/os
+                operator: NotIn
+                values:
+                - "windows"
+            - matchExpressions:
+              # RKE2 node selector label
+              - key: node-role.kubernetes.io/control-plane
+                operator: In
+                values:
+                - "true"
+              - key: kubernetes.io/os
+                operator: NotIn
+                values:
+                - "windows"
+      tolerations:
+        - key: node.cloudprovider.kubernetes.io/uninitialized
+          value: "true"
+          effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
+          operator: Exists
+        - key: node.kubernetes.io/not-ready
+          effect: NoSchedule
+          operator: Exists
+        # Rancher specific change: These tolerations are added to account for RKE1 and RKE2 taints
+        - key: node-role.kubernetes.io/controlplane
+          effect: NoSchedule
+          value: "true"
+        - key: node-role.kubernetes.io/control-plane
+          effect: NoSchedule
+          operator: Exists
+        - key: node-role.kubernetes.io/etcd
+          effect: NoExecute
+          operator: Exists
+      securityContext:
+        runAsUser: 1001
+      serviceAccountName: rancher-vsphere-cpi-cloud-controller-manager
+      containers:
+        - name: rancher-vsphere-cpi-cloud-controller-manager
+          image: rancher/mirrored-cloud-provider-vsphere:v1.31.1
+          args:
+            - --cloud-provider=vsphere
+            - --v=2
+            - --cloud-config=/etc/cloud/vsphere.yaml
+          volumeMounts:
+            - mountPath: /etc/cloud
+              name: vsphere-config-volume
+              readOnly: true
+          resources:
+            requests:
+              cpu: 200m
+      hostNetwork: true
+      volumes:
+      - name: vsphere-config-volume
+        configMap:
+          name: vsphere-cloud-config
+
