@@ -1,0 +1,97 @@
+---
+- name: Secure SSHD using Mozilla Infosec recommended configurations
+  hosts: all
+  become: true
+  gather_facts: true
+  pre_tasks:
+    - name: Gather fact subset
+      ansible.builtin.setup:
+        filter: "*os_family*,*distribution_major_version*"
+
+    - name: Gather package facts
+      ansible.builtin.package_facts:
+
+  tasks:
+    - name: Set openssh_server_version fact
+      ansible.builtin.set_fact:
+        openssh_server_version: "{{ ansible_facts.packages['openssh-server'][0].version }}"    
+    
+    - name: Deploy sshd_config for RHEL based servers
+      when: ansible_os_family == "RedHat"
+      block:
+        - name: RHEL OpenSSH >= 6.7 tasks
+          when: 'openssh_server_version is ansible.builtin.version("6.7", "ge")'
+          block:
+            - name: Enforce 3072 moduli on RHEL
+              ansible.builtin.shell:
+                cmd: "{{ item }}"
+              with_items:
+                - "mv /etc/ssh/moduli /etc/ssh/moduli.original"
+                - "awk '$5 >= 3071' /etc/ssh/moduli.original > /etc/ssh/moduli"
+            - name: Copy OpenSSH >= 6.7 configuration on RHEL servers
+              register: sshd_config_copied
+              notify: restart_sshd
+              ansible.builtin.copy:
+                src: files/sshd_config-v6_7
+                dest: /etc/ssh/sshd_config
+                mode: 0600
+                backup: true
+
+        - name: RHEL 5.3 <= OpenSSH < 6.7 tasks
+          when: 
+            - 'openssh_server_version is ansible.builtin.version("6.7", "lt")'
+            - 'openssh_server_version is ansible.builtin.version("5.3", "ge")'
+          block:
+            - name: Enforce 2048 moduli on RHEL
+              ansible.builtin.shell:
+                cmd: "{{ item }}"
+              with_items:
+                - "mv /etc/ssh/moduli /etc/ssh/moduli.original"
+                - "awk '$5 >= 2047' /etc/ssh/moduli.original > /etc/ssh/moduli"
+            - name: Deploy 5.3 <= OpenSSH < 6.7 configuration on RHEL servers
+              register: sshd_config_copied
+              notify: restart_sshd
+              ansible.builtin.copy:
+                src: files/sshd_config-v5_3
+                dest: /etc/ssh/sshd_config
+                mode: 0600
+                backup: true
+
+    - name: Ubuntu server tasks
+      when: ansible_os_family == 'Debian'
+      block:
+        - name: Enforce 3072 moduli on Ubuntu
+          ansible.builtin.shell:
+            cmd: "{{ item }}"
+          with_items:
+            - "mv /etc/ssh/moduli /etc/ssh/moduli.original"
+            - "awk '$5 >= 3071' /etc/ssh/moduli.original > /etc/ssh/moduli"
+        - name: Deploy Ubuntu OpenSSH configuration
+          register: sshd_config_copied
+          notify: restart_sshd
+          ansible.builtin.copy:
+            src: files/sshd_config_ubuntu
+            dest: /etc/ssh/sshd_config
+            mode: 0600
+            backup: true
+
+  post_tasks:
+    - name: Flush handlers
+      ansible.builtin.meta: flush_handlers
+
+    - name: Test SSH connection to {{ inventory_hostname }}
+      register: connectivity_test
+      ansible.builtin.ping:
+
+    - name: Assert connection was successful
+      ansible.builtin.assert:
+        that:
+          - connectivity_test.ping == "pong"
+        success_msg: "SSH daemon is responding."
+        fail_msg: "SSH daemon is not responding!"
+
+  handlers:
+    - name: restart_sshd
+      ansible.builtin.service:
+        name: sshd
+        state: restarted
